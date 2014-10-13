@@ -1,9 +1,13 @@
 \documentclass[margin,line]{res}
 
 \usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+}
 
 \oddsidemargin=-0.65in
-\evensidemargin=-.5in
+\evensidemargin=-.65in
 \textwidth=6.2in
 \itemsep=0in
 \parsep=0in
@@ -33,14 +37,14 @@
 \vspace{.05in}
 \begin{tabular}{@{}p{4in}p{2in}}
  {\it Cell:}  (562) 448-2053 & \\
- {\it E-mail:}  hpimentel@berkeley.edu & \\       
- {\it WWW:} \url{http://eecs.berkeley.edu/~pimentel} &
+ {\it E-mail:}  haroldpimentel@gmail.com & \\
+ {\it WWW:} \url{http://cs.berkeley.edu/~pimentel} &
 \end{tabular}
 
 \section{\sc Objective} 
-To find an internship where I can apply my knowledge from statistics, machine
-learning, and computer science. In general, I am interested in analyzing
-high-dimensional data.
+To find an internship where I can apply my statistics, machine learning, and
+computer science skills. In general, I am interested in data science, especially
+analyzing high-dimensional data.
 
 \section{\sc Education}
 {\bf University of California, Berkeley}, Berkeley, California, USA
@@ -55,7 +59,6 @@ Ph.D., Computer Science \hfill {\bf
 \item Specialization: Computational biology, (bio)statistics, machine learning
 \item Supported by NSF Graduate Research Fellowship Program (2011-2014)
 \item Supported by GAANN fellowship, and Academic Excellence Award (2010-2011)
-\item Relevant coursework: statistical learning theory, theoretical statistics, applied statistics
 \end{list2}
 
 M.A., Statistics \hfill {\bf
@@ -68,7 +71,6 @@ M.A., Statistics \hfill {\bf
 \item Thesis: Biclustering as an application of sparse canonical correlation analysis with RNA-Seq \\applications
 \end{list2}
 
-
 {\bf California State University, Fullerton}, Fullerton, California, USA
 
 \vspace{-.3cm}
@@ -80,6 +82,11 @@ B.S., Computer Science \hfill {\bf August 2005 - May 2010}\\
 \item Minor: Mathematics
 \item Graduated with summa cum laude
 \end{list2}
+
+\vspace{-0.3cm}
+\section{\sc Relevant Graduate Coursework}
+Statistical Learning Theory (CS 281A), Theoretical Statistics I (STAT 210A), Statistical Models: Theory and Application (STAT 215B), Advanced Computer Systems (CS 262A)
+\vspace{0.1cm}
 
 \section{\sc Professional Experience}
 
@@ -110,16 +117,15 @@ I've been working with the D. Melanogaster perturbation data set which looks at
 85 different experimental conditions.
 
 
-{\bf California State University, Fullerton (CSUF)}, Fullerton, California USA
+{\bf California State University, Fullerton}, Fullerton, California USA
 \vspace{-.3cm}
 
 {\em Research Assistant} \hfill {\bf December 2007 - May 2010}\\
 Professor Spiros Courellis Lab. Shake\&wARP electron density map refinement
-research project. Deployed a distributed and parallel computing environment used
-for Phase Bias Removal in Macromolecular Crystallography. Developed new
-techniques for alternative electron density maps, including new methods to
-cluster maps based on similarity and returning a new averaged map based on the
-most similar maps.
+research project. Deployed a distributed and parallel computing environment
+used for Phase Bias Removal in Macromolecular Crystallography. Developed new
+methods to cluster maps based on similarity and returning a new averaged map
+based on the most similar maps.
 
 \newpage
 
@@ -133,7 +139,7 @@ determining the affinity of a transcription factor to a repetitive element
 family in ChIP-seq reads. Application was used to test the affinity of Retinoic
 Acid Receptor to ALU repetitive elements.
 
-\section{\sc Honors and Awards (Since 2010)}
+\section{\sc Honors and Awards \\ (Since 2010)}
 FASEB MARC Travel Award for ISMB 2014 \hfill {\bf July 2014}
 
 National Science Foundation Graduate Research Fellowship Program (NSF GRFP)
@@ -166,11 +172,6 @@ L. Salzberg, ``TopHat2: accurate alignment of transcriptomes in the presence of
 insertions, deletions and gene fusions", {\bf \emph{Genome Biology
     14:R36 (2013)}} (Journal Publication)
 
-C. Trapnell, A. Roberts, L. Goff, G. Pertea, D. Kim, D. R. Kelley,
-\underline{H. Pimentel}, S. L. Salzberg, J. L. Rinn, L. Pachter: ``Differential
-gene and transcript expression analysis of RNA-seq experiments with TopHat and
-Cufflinks" {\bf \emph{Nature Protocols 7, 562–578 (2012)}} (Journal Publication)
-
 A. Roberts, \underline{H. Pimentel}, C. Trapnell, L. Pachter: ``Identification
 of novel transcripts in annotated genomes using RNA-Seq", {\bf
   \emph{Bioinformatics (2011) 27 (17): 2325-2329.}} (Journal Publication)
@@ -181,30 +182,32 @@ RNA-Seq fragment alignments", {\bf \emph{ISMB 2011}}, Vienna, Austria (July,
 
 \section{\sc Open source software}
 \begin{list2}
-  \item Fast SCCA (2014)- Implementation of SCCA using the NIPALS algorithm (C++, R) [github.com/pimentel/fast-scca]
-  \item TopHat (2011) - Modules for transcriptome mapping since version 1.4.0 (C++) [http://tophat.cbcb.umd.edu/]
+  \item Fast SCCA (2014) - Implementation of SCCA using the NIPALS algorithm (C++, R) \\ 
+    \url{http://github.com/pimentel/fast-scca}
+  \item TopHat (2011) - Modules for transcriptome mapping since version 1.4.0 (C++) \\
+    \url{http://ccb.jhu.edu/software/tophat}
+  \item Miscellaneous code can be found at \url{http://github.com/pimentel}
 \end{list2}
 
 % \vspace{0.15cm}
 % For now, using the Dreyfus model of skill acquisition:
 % http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition
-\section{\sc Computer Skills} 
+\section{\sc Computational Skills}
 \begin{list2}
 \item Languages:
   \begin{list2}
     \item Proficient: R, Python
     \item Competent: C++, SQL
     \item Advanced beginner: Bash
+    \item Experience with but currently rarely use: Java, Perl, MATLAB, Fortran, csh
   \end{list2}
-\item Several other ``retired" languages which I haven't used in a while,
-  but was once fluent in: csh, Java, Perl, MATLAB, Fortran
 \item Unit testing
 \item System administration in Linux/UNIX
 \item Tools: Git, CMake, Vim, OpenPBS/Torque\\ 
 \end{list2}
 \vspace{-.65cm}
 
-\section{\sc Outreach (Since 2010)}
+\section{\sc Outreach \\ (Since 2010)}
 Presentations to biology and statistics classrooms at La Mirada High School on
 computational biology (Spring 2014)
 
