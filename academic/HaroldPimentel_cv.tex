@@ -1,6 +1,10 @@
 \documentclass[margin,line]{res}
 
 \usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+}
 
 \oddsidemargin=-0.65in
 \evensidemargin=-.5in
@@ -46,12 +50,13 @@ high-dimensional data.
 {\bf University of California, Berkeley}, Berkeley, California, USA
 
 \vspace{-.3cm}
-Ph.D., Computer Science \hfill {\bf
+Ph.D. candidate, Computer Science \hfill {\bf
  Fall 2010 - Present}\\
 \vspace{-.45cm}
 \begin{list2}
 \vspace*{1mm}
 \item Advisor: Prof. Lior Pachter
+\item Qualifying exam committee (May 2014): Doris Bachtrog, Haiyan Huang, Lior Pachter, Nir Yosef
 \item Specialization: Computational biology, (bio)statistics, machine learning
 \item Supported by NSF Graduate Research Fellowship Program (2011-2014)
 \item Supported by GAANN fellowship, and Academic Excellence Award (2010-2011)
@@ -174,6 +179,12 @@ Computer Science Dean's List at CSUF \hfill {\bf Fall 2005 - Spring 2010}
 
 \section{\sc Presentations and Publications}
 
+\underline{H. Pimentel}, M. Parra, S. Gee, N. Mohandas, L. Pachter, J. G.
+Conboy: ``An Erythroid-Specific Intron Retention Program Regulates Expression
+of Selected Genes during Terminal Erythropoiesis", {\bf \emph{American Society
+    of Hematology 2014}}, San Francisco, California, USA (December, 2014; Oral
+Presentation).
+
 A. Conesa, P. Madrigal, M. Love, S. Tarazona, D. Gomez-Cabrero, A. Cervera,
 \underline{H. Pimentel}, A. McPherson, M. Szczesniak, D. Gaffney, L. Elo, X.
 Zhang, A. Mortazavi: ``Practical Guidelines and Standards in the Computational
@@ -181,8 +192,9 @@ Analysis of RNA-seq Data", {\emph{In preparation.}} *All authors contributed
 equally to this manuscript.
 
 \underline{H. Pimentel}, H. Huang: ``Biclustering as an application of sparse
-canonical correlation analysis", {\bf \emph{ISMB 2014}}, Vienna, Austria (July,
-2014; Poster Presentation). Travel fellowship provided by FASEB MARC.
+canonical correlation analysis", {\bf \emph{ISMB 2014}}, Boston, Massachusetts,
+USA (July, 2014; Poster Presentation). Travel fellowship provided by FASEB
+MARC.
 
 \underline{H. Pimentel}, M. Parra, S. Gee, D. Ghanem, X. An, J. Li, N.
 Mohandas, L. Pachter, J. G. Conboy: ``A dynamic alternative splicing program
@@ -194,6 +206,8 @@ L. Salzberg, ``TopHat2: accurate alignment of transcriptomes in the presence of
 insertions, deletions and gene fusions", {\bf \emph{Genome Biology
     14:R36 (2013)}} (Journal Publication)
 
+\newpage
+
 C. Trapnell, A. Roberts, L. Goff, G. Pertea, D. Kim, D. R. Kelley,
 \underline{H. Pimentel}, S. L. Salzberg, J. L. Rinn, L. Pachter: ``Differential
 gene and transcript expression analysis of RNA-seq experiments with TopHat and
@@ -202,8 +216,6 @@ Cufflinks" {\bf \emph{Nature Protocols 7, 562–578 (2012)}} (Journal Publicatio
 A. Roberts, \underline{H. Pimentel}, C. Trapnell, L. Pachter: ``Identification
 of novel transcripts in annotated genomes using RNA-Seq", {\bf
   \emph{Bioinformatics (2011) 27 (17): 2325-2329.}} (Journal Publication)
-
-\newpage
 
 \underline{H. Pimentel}, A. Roberts, C. Trapnell, L. Pachter: ``Visualizing
 RNA-Seq fragment alignments", {\bf \emph{ISMB 2011}}, Vienna, Austria (July,
@@ -273,12 +285,18 @@ Vice President for Association of Computing Machinery, CSUF Chapter
 Member of Orange County Linux Users Group as well as UNIX Users
 Association of Southern California (June 2007 - May 2010)
 
-\section{\sc Open source software}
-Wrote numerous modules in TopHat spliced-alignment software to support
-transcriptome mapping since version 1.4.0. (C++). http://tophat.cbcb.umd.edu/.
-Other projects available on my Github page: http://github.com/pimentel/.
-
 \newpage
+
+\section{\sc Open source software}
+
+\begin{list2}
+  \item Fast SCCA (2014) - Implementation of SCCA using the NIPALS algorithm (C++, R) \\
+    \url{http://github.com/pimentel/fscca}
+  \item TopHat (2011) - Modules for transcriptome mapping since version 1.4.0 (C++) \\
+    \url{http://ccb.jhu.edu/software/tophat}
+  \item Other code can be found at \url{http://github.com/pimentel}
+\end{list2}
+
 % \vspace{0.15cm}
 % For now, using the Dreyfus model of skill acquisition:
 % http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition
