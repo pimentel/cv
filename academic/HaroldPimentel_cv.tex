@@ -20,6 +20,20 @@
 \topmargin -0.35in
 \textheight 10.0in
 
+% sans serif fonts
+\renewcommand{\familydefault}{\sfdefault}
+% \newfontfamily\subsubsectionfont[Color=MSLightBlue]{Times New Roman}
+% \sectionfont{\fontfamily{pag}\selectfont}
+
+\usepackage{titlesec}
+
+
+% \titleformat{\section}
+% {\color{RoyalBlue}\sffamily\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.5pt]}]
+
+
+\renewcommand{\sectionfont}{\sffamily}
+
 \newenvironment{list1}{
   \begin{list}{\ding{113}}{%
       \setlength{\itemsep}{0in}
@@ -50,7 +64,7 @@
 
 %#\begin{tabular}{@{}p{4in}p{2in}}
 \begin{tabular}{r l}
-  {\it Cell:}&  {(111) 222-3333} \\
+  {\it Cell:}&  {(XXX) XXX-XXXX} \\
   {\it E-mail:}&  {haroldpimentel@gmail.com} \\
   {\it Web:}& {\url{http://pimentel.github.io}} \\
   {\it GitHub:}& {\url{http://github.com/pimentel}} \\
@@ -218,10 +232,10 @@ insertions, deletions and gene fusions'', {\bf \emph{Genome Biology
 C. Trapnell, A. Roberts, L. Goff, G. Pertea, D. Kim, D. R. Kelley,
 \underline{H. Pimentel}, S. L. Salzberg, J. L. Rinn, L. Pachter: ``Differential
 gene and transcript expression analysis of RNA-seq experiments with TopHat and
-Cufflinks" {\bf \emph{Nature Protocols 7, 562–578 (2012)}}
+Cufflinks'', {\bf \emph{Nature Protocols 7, 562–578 (2012)}}
 
 A. Roberts, \underline{H. Pimentel}, C. Trapnell, L. Pachter: ``Identification
-of novel transcripts in annotated genomes using RNA-Seq", {\bf
+of novel transcripts in annotated genomes using RNA-Seq'', {\bf
   \emph{Bioinformatics (2011) 27 (17): 2325-2329.}}
 
 \section{\sc Presentations}
@@ -232,37 +246,37 @@ of novel transcripts in annotated genomes using RNA-Seq", {\bf
 
 \hlpub *\underline{H. Pimentel}, *N. Bray, P. Melsted, L. Pachter: ``Ultrafast RNA-seq Analysis with Kallisto and Sleuth'', {\bf \emph{Functional Genomics Seminar}}, UC Davis, USA (February, 2016; Invited by Sharon Aviran). *denotes joint presentation
 
-\underline{H. Pimentel}, N. Bray, P. Melsted, L. Schaeffer, L. Pachter: ``Transcript level abundance estimation and differential expression with kallisto and sleuth", {\bf \emph{RNA-Seq symposium}}, Janssen Pharmaceuticals, WebEx (November, 2015)
+\underline{H. Pimentel}, N. Bray, P. Melsted, L. Schaeffer, L. Pachter: ``Transcript level abundance estimation and differential expression with kallisto and sleuth'', {\bf \emph{RNA-Seq symposium}}, Janssen Pharmaceuticals, WebEx (November, 2015)
 
-\underline{H. Pimentel}, N. Bray, P. Melsted, L. Pachter: ``Transcript level differential analysis with sleuth", {\bf \emph{Genome Informatics}}, Cold Spring Harbor
+\underline{H. Pimentel}, N. Bray, P. Melsted, L. Pachter: ``Transcript level differential analysis with sleuth'', {\bf \emph{Genome Informatics}}, Cold Spring Harbor
 Laboratory, USA (October, 2015; Poster Presentation).
 
 \hlpub *\underline{H. Pimentel}, *N. Bray, P. Melsted, L. Pachter: ``Ultrafast RNA-seq Analysis with Kallisto and Sleuth '', {\bf \emph{Systems Biology Seminar}}, UCSF, USA (July, 2015; Invited by Raj Bhatnagar). *denotes joint presentation
 
 \underline{H. Pimentel}, N. Bray, P. Melsted, L. Pachter: ``Transcript-level
 quantification and differential expression with measurement uncertainty using
-RNA-Seq", {\bf \emph{Ramsingh Lab}}, University of Southern California, USA (June,
+RNA-Seq'', {\bf \emph{Ramsingh Lab}}, University of Southern California, USA (June,
 2015; Ramsingh Group Presentation).
 
 N. Bray, \underline{H. Pimentel}, P. Melsted, L. Pachter: ``Ultrafast accurate
-RNA-Seq analysis", {\bf \emph{Biology of Genomes}}, Cold Spring Harbor
+RNA-Seq analysis'', {\bf \emph{Biology of Genomes}}, Cold Spring Harbor
 Laboratory, USA (June, 2015; Poster Presentation).
 
 \newpage
 
 \hlpub \underline{H. Pimentel}, M. Parra, S. Gee, N. Mohandas, L. Pachter, J. G.
 Conboy: ``An Erythroid-Specific Intron Retention Program Regulates Expression
-of Selected Genes during Terminal Erythropoiesis", {\bf \emph{American Society
+of Selected Genes during Terminal Erythropoiesis'', {\bf \emph{American Society
     of Hematology 2014}}, San Francisco, California, USA (December, 2014; Oral
 Presentation).
 
 \underline{H. Pimentel}, H. Huang: ``Biclustering as an application of sparse
-canonical correlation analysis", {\bf \emph{ISMB 2014}}, Boston, Massachusetts,
+canonical correlation analysis'', {\bf \emph{ISMB 2014}}, Boston, Massachusetts,
 USA (July, 2014; Poster Presentation). Travel fellowship provided by FASEB
 MARC.
 
 \underline{H. Pimentel}, A. Roberts, C. Trapnell, L. Pachter: ``Visualizing
-RNA-Seq fragment alignments", {\bf \emph{ISMB 2011}}, Vienna, Austria (July,
+RNA-Seq fragment alignments'', {\bf \emph{ISMB 2011}}, Vienna, Austria (July,
 2011; Poster Presentation). Travel fellowship provided by FASEB MARC.
 
 \underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp:
@@ -310,27 +324,29 @@ Crystallography.'' {\bf \emph{CSU Program for Education and Research
 
 \newpage
 
-\section{\sc Selected Honors and Awards}
+\section{\sc Funding and Fellowships}
 
 HHMI Hanna H. Gray Fellowship \hfill {\bf September 2017 - September 2023}\\
 Transitional award (Postdoc to PI; \$1.4M over 8 years)
 
 NIH Supplement to Promote Diversity in Health-Related Research \hfill {\bf November 2016 - September 2017}
 
-FASEB MARC Travel Award for ISMB 2014 \hfill {\bf August
-  July 2014}
-
 National Science Foundation Graduate Research Fellowship Program (NSF GRFP)
 \hfill {\bf August 2011 - May 2015}
+
+NIH Maximizing Access to Research Careers (MARC) Scholar \hfill {\bf
+  June 2008 - May 2010}
+
+\section{\sc Selected Honors and Awards}
+
+FASEB MARC Travel Award for ISMB 2014 \hfill {\bf August
+  July 2014}
 
 FASEB MARC Travel Award for ISMB 2011 \hfill {\bf August
   July 2011}
 
 Graduate Assistance in Areas of National Need (GAANN) Fellow \hfill {\bf August
   2010 - May 2011}
-
-NIH Minority Access to Research Careers (MARC) Scholar \hfill {\bf
-  June 2008 - May 2010}
 
 Boeing Dean's Scholarship \hfill {\bf April 2009 - 2010}
 
@@ -376,7 +392,8 @@ Non-academic:
     \item Proficient: R, C++, Python
     \item Competent: JavaScript, SQL, Bash
   \end{list2}
-\item Several other ``retired" languages which I haven't used in a while,
+\item Voice recognition for general input and software development
+\item Several other ``retired'' languages which I haven't used in a while,
   but was once fluent in: csh, Java, Perl, MATLAB, Fortran
 \item Unit testing
 \item System administration in Linux/UNIX
@@ -416,10 +433,10 @@ Association of Southern California (June 2007 - May 2010)
 
 
 \section{\sc Teaching}
-GSI for ``Introduction to Statistical Computing" (STAT 243). Main course taught
+GSI for ``Introduction to Statistical Computing'' (STAT 243). Main course taught
 by Chris Paciorek. (Fall 2015)
 
-GSI for two sections of ``Structure and Interpretation of Computer Programs"
+GSI for two sections of ``Structure and Interpretation of Computer Programs''
 (CS 61A). Main course taught by Professor John DeNero. (Spring 2015)
 
 \section{\sc Mentoring}
@@ -432,15 +449,15 @@ Diego Alcantar (Undergraduate; September 2015 - May 2016) has been working on in
 Daniel Li (Undergraduate; August 2015 - December 2015) worked on implementing visualizations for principal component analysis loadings and bias parameters in sleuth.
 
 \section{\sc Workshops}
- ``Differential expression analysis with Sleuth." {\emph{Kallisto-Sleuth workshop at UC Berkeley}}. Hosted by Laboratory of Mathematics and Computational Biology (2016). Slides at \url{https://pachterlab.github.io/kallisto-sleuth-workshop-2016/}
+ ``Differential expression analysis with Sleuth.'' {\emph{Kallisto-Sleuth workshop at UC Berkeley}}. Hosted by Laboratory of Mathematics and Computational Biology (2016). Slides at \url{https://pachterlab.github.io/kallisto-sleuth-workshop-2016/}
 
-``Algorithms for RNA-Seq" {\emph{iPlant workshop at UC Davis}}. Hosted by iPlant Collaborative (2015). Video at \url{https://youtu.be/96yBPM8lEt8?list=PLfFNmoa-yUIb5cYG2R1zf5rtrQQKZvKwG}
+``Algorithms for RNA-Seq'' {\emph{iPlant workshop at UC Davis}}. Hosted by iPlant Collaborative (2015). Video at \url{https://youtu.be/96yBPM8lEt8?list=PLfFNmoa-yUIb5cYG2R1zf5rtrQQKZvKwG}
 
-``Algorithms for RNA-Seq" {\emph{RNA-Seq for the Next Generation}}. Hosted by Cold Spring Harbor Laboratory (2015). Slides at \url{http://www.rnaseqforthenextgeneration.org/}
+``Algorithms for RNA-Seq'' {\emph{RNA-Seq for the Next Generation}}. Hosted by Cold Spring Harbor Laboratory (2015). Slides at \url{http://www.rnaseqforthenextgeneration.org/}
 
-``eXpress transcript quantification" {\emph{*Seq I Workshop}}. Hosted by Laboratory of Mathematics and Computational biology (2012). \url{http://lmcb.wikispaces.com/eXpress+Walkthrough}
+``eXpress transcript quantification'' {\emph{*Seq I Workshop}}. Hosted by Laboratory of Mathematics and Computational biology (2012). \url{http://lmcb.wikispaces.com/eXpress+Walkthrough}
 
-``Sequence alignment" {\emph{RNA-Seq workshop}}. Hosted by Computational Genomics Resource Laboratory (2011).  \url{http://cgrlucb.wikispaces.com/Sequence+alignment}
+``Sequence alignment'' {\emph{RNA-Seq workshop}}. Hosted by Computational Genomics Resource Laboratory (2011).  \url{http://cgrlucb.wikispaces.com/Sequence+alignment}
 
 \newpage
 
@@ -456,6 +473,6 @@ Mathematics, Engineering, Science Achievement (MESA) Robotics Workshop
 \vspace{-.25cm}
 
 \section{\sc Hobbies}
-Sketching, fountain pens and caligrpahy, road and mountain cycling, bicycle mechanics.
+Sketching, fountain pens and calligraphy, road and mountain cycling, bicycle mechanics.
 \end{resume}
 \end{document}
