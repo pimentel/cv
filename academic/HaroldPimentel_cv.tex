@@ -1,5 +1,73 @@
-% \documentclass[margin,line]{res}
-\documentclass[overlapped]{res}
+\documentclass[11pt,notitlepage]{article} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+% used for page numbering
+\usepackage{lastpage}
+
+\usepackage{etaremune}
+
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\usepackage{graphicx}
+\graphicspath{{../figures/}}
+
+\usepackage[dvipsnames]{xcolor}
+
+% \usepackage{titlesec}
+\usepackage[compact]{titlesec}
+
+\usepackage[font={small,it},labelfont=bf,belowskip=-15pt]{caption}
+% \captionsetup{belowskip=-10pt}
+
+
+\titleformat{\section}
+{\color{Black}\sffamily\large\bfseries}{}{1em}{}[{\titlerule[0.5pt]}]
+
+
+\titleformat{\subsection}
+% {\normalfont\normalsize\bfseries}{\thesection}{1em}{\textcolor{gray}{\rule[1mm]{2cm}{2pt}}\hspace{3pt}}
+{\color{Black}\sffamily\normalsize\bfseries}{\thesection}{1em}{\textcolor{Black}{\rule[1mm]{2cm}{2pt}}\hspace{3pt}}
+
+% sans serif fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% % Helvetica fonts
+% \renewcommand*\familydefault{\sfdefault}
+% \usepackage[scaled]{helvet}
+% \renewcommand\familydefault{\sfdefault}
+% \usepackage[T1]{fontenc}
+
+\usepackage{layouts}
+
+\usepackage[letterpaper]{geometry}
+
+
+\geometry{left=1in,right=1in,top=1in,bottom=1in,
+   headheight=35pt,headsep=10pt,footskip=15pt}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+   % \fancyhead[L]{\textbf{\textcolor{gray}{\Large Research Statement}}}
+   % \fancyhead[R]{\textbf{\Large \textcolor{Black}{Harold Pimentel}}}
+   \fancyfoot[C]{\footnotesize \thepage/\pageref{LastPage}}
+}
+
+% \fancyhf{} % sets both header and footer to nothing
+\fancyhead[L]{\textit{\textcolor{gray}{Harold Pimentel}}}
+\fancyhead[R]{\textit{\textcolor{gray}{Curriculum vitae, November 2019}}}
+\fancyfoot[R]{}
+\fancyfoot[c]{\footnotesize \thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\headrulewidth}{0.4pt}
+% \renewcommand{\footrulewidth}{0.4pt}
+
+% macros
+\newcommand{\crypto}{\textit{C. neoformans}}
+\newcommand{\rtopic}[1]{\textcolor{Black}{\textbf{\sffamily#1}}}
 
 \usepackage{soul}
 \usepackage{color}
@@ -10,15 +78,32 @@
   urlcolor=blue,
 }
 
-% \oddsidemargin=-0.65in
-\oddsidemargin=-0.3in
-% \evensidemargin=-.5in
-\evensidemargin=0in
-\textwidth=6.2in
-\itemsep=0in
-\parsep=0in
-\topmargin -0.35in
-\textheight 10.0in
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0em}
+
+% % \oddsidemargin=-0.65in
+% \oddsidemargin=-0.3in
+% % \evensidemargin=-.5in
+% \evensidemargin=0in
+% \textwidth=6.2in
+% \itemsep=0in
+% \parsep=0in
+% \topmargin -0.35in
+% \textheight 10.0in
+
+% sans serif fonts
+% \renewcommand{\familydefault}{\sfdefault}
+% \newfontfamily\subsubsectionfont[Color=MSLightBlue]{Times New Roman}
+% \sectionfont{\fontfamily{pag}\selectfont}
+
+% \usepackage{titlesec}
+
+
+% \titleformat{\section}
+% {\color{RoyalBlue}\sffamily\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.5pt]}]
+
+
+% \renewcommand{\sectionfont}{\sffamily}
 
 \newenvironment{list1}{
   \begin{list}{\ding{113}}{%
@@ -27,6 +112,7 @@
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
       \setlength{\leftmargin}{0.17in}}}{\end{list}}
 \newenvironment{list2}{
+  \vspace{-\parskip}
   \begin{list}{$\bullet$}{%
       \setlength{\itemsep}{0in}
       \setlength{\parsep}{0in} \setlength{\parskip}{0in}
@@ -39,18 +125,32 @@
 
 \begin{document}
 
-\name{\LARGE Harold Pimentel\vspace*{0.01in}}
-\address{\centerline{\large Postdoctoral researcher}\\ \ \vspace*{-4mm}\\\centerline{\large HHMI Hanna H. Gray fellow}}
-% \name{Harold Pimentel \vspace*{.1in}\\ \ \\hi}
+\thispagestyle{firststyle}
 
-\begin{resume}
 
-\section{\sc Contact Information}
-\vspace{.05in}
+% \name{\LARGE Harold Pimentel\vspace*{0.01in}}
+% \address{\centerline{\large Postdoctoral researcher}\\ \ \vspace*{-4mm}\\\centerline{\large HHMI Hanna H. Gray fellow}}
+% % \name{Harold Pimentel \vspace*{.1in}\\ \ \\hi}
 
+% \begin{resume}
+
+% \section*{Contact Information}
+% \vspace{.05in}
+
+\begin{center}
+  {\Huge \bf Harold Pimentel}
+
+  \medskip
+  {\large Postdoctoral researcher}
+
+  \medskip
+
+  {\large HHMI Hanna H. Gray Fellow}
+\end{center}
 %#\begin{tabular}{@{}p{4in}p{2in}}
+\bigskip
 \begin{tabular}{r l}
-  {\it Cell:}&  {(111) 222-3333} \\
+  {\it Cell:}&  {(562) 587-1680} \\
   {\it E-mail:}&  {haroldpimentel@gmail.com} \\
   {\it Web:}& {\url{http://pimentel.github.io}} \\
   {\it GitHub:}& {\url{http://github.com/pimentel}} \\
@@ -58,17 +158,15 @@
 \end{tabular}
 
 
-\section{\sc Education}
+\bigskip
+\section*{Education}
+\medskip
 
 {\bf University of California, Berkeley}, Berkeley, California, USA
 
-\vspace{-.3cm}
-Ph.D., Computer Science\hfill {\bf
- August 2010 - August 2016}\\
-\vspace{-.45cm}
-\begin{list2}
-\vspace*{1mm}
-\item Advisor: Prof. Lior Pachter
+Ph.D., Computer Science\hfill {\bf August 2010--August 2016}
+\begin{itemize}[noitemsep,topsep=0pt]
+\item Advisor: Prof.\ Lior Pachter
 \item Thesis: \textit{\textbf{Fast and accurate quantification and differential analysis of transcriptomes}}.
 \item Thesis committee: Haiyan Huang, Lior Pachter, Nir Yosef
 \item Qualifying exam committee (May 2014): Doris Bachtrog, Haiyan Huang, Lior Pachter, Nir Yosef
@@ -76,95 +174,98 @@ Ph.D., Computer Science\hfill {\bf
 \item Specialization: Computational biology, (bio)statistics, machine learning
 \item Supported by NSF Graduate Research Fellowship Program (2011-2014)
 \item Supported by GAANN fellowship, and Academic Excellence Award (2010-2011)
-\end{list2}
+\end{itemize}
 
+\bigskip
 
-M.A., Statistics \hfill {\bf
- December 2013}\\
-\vspace{-.45cm}
-\begin{list2}
-\vspace*{1mm}
-\item Advisor: Prof. Haiyan Huang
+M.A., Statistics \hfill {\bf December 2013}
+\begin{itemize}[noitemsep,topsep=0pt]
+\item Advisor: Prof.\ Haiyan Huang
 \item Specialization: Applied statistics
 \item Thesis: \textit{\textbf{Biclustering as an application of sparse canonical correlation analysis with RNA-Seq applications}}.
 \item Thesis committee: Peter J. Bickel, Haiyan Huang, Lior Pachter
-\end{list2}
+\end{itemize}
 
+\bigskip
 
-
-{\bf California State University, Fullerton}, Fullerton, California, USA
-
-\vspace{-.3cm}
-B.S., Computer Science \hfill {\bf August 2005 - May 2010}\\
-\vspace{-.45cm}
-\begin{list2}
-\vspace*{1mm}
+{\bf California State University, Fullerton}, Fullerton, California, USA\\
+B.S., Computer Science \hfill {\bf August 2005--May 2010}
+\begin{itemize}[noitemsep,topsep=0pt]
 \item Specialization: Scientific computing
 \item Minor: Mathematics
 \item Graduated with summa cum laude
-\end{list2}
+\end{itemize}
 
-\section{\sc Employement}
+\bigskip
+\section*{Employment}
+
+\medskip
 
 {\bf Stanford University}, Stanford, California USA
-\vspace{-.3cm}
+% \vspace{-.3cm}
 
-{\em Postdoctoral Researcher} \hfill {\bf August 2016 - Present}\\
+{\em Postdoctoral Researcher} \hfill {\bf August 2016--Present}\\
 Professor Jonathan Pritchard Lab.
-Interested in RNA expression, splicing, regulation, and how genetic variation affects those.
+Interested in RNA expression, splicing, regulation, and how genetic variation affects those, thus resulting in disease.
 Focused on statistical and algorithmic method development in: intron retention QTL mapping, modeling of targeted perturbations, network-guided trans-eQTL mapping.
-Additionally, ongoing collaboration with Prof. Hiten Madhani (UCSF) on developing statistical techniques for modeling conservation of methylation in highly repetitive regions (e.g. centromeres) in species \textit{C. neoformans}.
+Additionally, ongoing collaboration with Prof.\ Hiten Madhani (UCSF) on developing statistical techniques for modeling conservation of methylation in highly repetitive regions (e.g.\ centromeres) in species \textit{C. neoformans}.
+
+\newpage
 
 {\bf University of California, Berkeley}, Berkeley, California USA
-\vspace{-.3cm}
+% \vspace{-.3cm}
 
-{\em Research Assistant} \hfill {\bf October 2010 - July 2016}\\
+{\em Research Assistant} \hfill {\bf October 2010--July 2016}\\
 Professor Lior Pachter Lab.
-Generally focused on method development using statistics and machine learning for mRNA-Seq technology.
-Work included: identifying incorrect gene annotations, differential expression coupled with transcriptome abundance estimation, transcriptome mapping, visualizing fragment alignments, and analysis with biologist collaborators.
+Developed computational and statistical methods for analyzing mRNA-seq data.
+Work included: differential expression coupled with transcriptome abundance estimation, fast transcriptome mapping, splicing analysis of terminal erythropoiesis with experimental collaborators, identifying incorrect gene annotations, and visualizing fragment alignments.
 Also the system administrator for the group.
 
-{\em Research Assistant} \hfill {\bf June 2013 - July 2016}\\
+\medskip
+
+{\em Research Assistant} \hfill {\bf June 2013--July 2016}\\
 Professor Haiyan Huang Lab. Developing methods for biclustering of linear
 expression patterns by sparse canonical correlation analysis. Our method
 generalizes many existing biclustering methods.
 
-\newpage
+% \newpage
+
+\bigskip
 
 {\bf 10X Genomics}, Pleasanton, California USA
-\vspace{-.3cm}
 
-{\em Computational biology intern} \hfill {\bf May 2014 - August 2014}\\
+{\em Computational biology intern} \hfill {\bf May 2014--August 2014}\\
 Using statistical and machine learning techniques (MART, GLM) to analyze
 biological sequencing data from a novel sequencing platform. Also helped
 develop analysis pipelines in Python and R.
 
-{\bf California State University, Fullerton (CSUF)}, Fullerton, California USA
-\vspace{-.3cm}
+\bigskip
 
-{\em Research Assistant} \hfill {\bf December 2007 - May 2010}\\
+{\bf California State University, Fullerton (CSUF)}, Fullerton, California USA
+
+{\em Research Assistant} \hfill {\bf December 2007--May 2010}\\
 Professor Spiros Courellis Lab. Shake\&wARP electron density map refinement
 research project. Deployed a distributed and parallel computing environment used
 for Phase Bias Removal in Macromolecular Crystallography. Developed new
 techniques for alternative electron density maps, including new methods to
-cluster maps based on similarity and returning a new averaged map based on the
-most similar maps.
+cluster maps returning and aggregating maps.
 
+\bigskip
 
 {\bf Massachusetts Institute of Technology}, Cambridge, Massachusetts,
 USA
 
-\vspace{-.3cm}
-{\em Summer Research Intern} \hfill {\bf June 2009 - August 2009}\\
-Professor David Gifford Lab. Developed and implemented a technique for
-determining the affinity of a transcription factor to a repetitive element
-family in ChIP-seq reads. Application was used to test the affinity of Retinoic
+{\em Summer Research Intern} \hfill {\bf June 2009--August 2009}\\
+Professor David Gifford Lab. Developed and implemented a method for
+determining the affinity of transcription factors to specific repetitive element
+families in ChIP-seq. Application was used to test the affinity of Retinoic
 Acid Receptor to ALU repetitive elements.
+
+\bigskip
 
 {\bf Thales Raytheon Systems}, Fullerton, California USA
 
-\vspace{-.3cm}
-{\em Information Solutions Intern} \hfill {\bf May 2007 - May 2008}\\
+{\em Information Solutions Intern} \hfill {\bf May 2007--May 2008}\\
 Provided reliable, innovative, effective, and efficient computing infrastructure
 to employees. Tasks included support for PGP Encryption, server monitoring,
 system administration, etc.
@@ -172,113 +273,143 @@ system administration, etc.
 
 % \newpage
 
-\section{\sc Publications}
-Full list of publications at \href{https://scholar.google.com/citations?user=WfzyRAUAAAAJ&hl=en}{Google Scholar}.
+\bigskip
+\section*{Funding and Fellowships}
+\medskip
 
-\hlpub Denotes highlighted publication/presentation.
+HHMI Hanna H. Gray Fellowship \hfill {\bf September 2017--September 2023}\\
+Transitional award (Postdoc to PI; \$1.4M over 8 years)
 
-\underline{H. Pimentel}, Y. Li, L. Pachter, J. K. Pritchard: ``Fast intron retention QTL analysis'', {\bf \emph{In preparation. Pre-print expected October 2019.}}
+\medskip
 
-\hlpub S. Catania, *P. A. Dumesic, \underline{*H. Pimentel}, A. Nasif, C. I. Stoddard, J. E. Burke, J. K. Diedrich, S. Cook, T. Shea, E. Geinger, R. Lintner, J. R. Yates III, P. Hajkova, G. J. Narlikar, C. A. Cuomo, J. K. Pritchard, H. D. Madhani: ``Evolutionary persistence of DNA methylation for millions of years after ancient loss of a de novo methyltransferase'', {\bf \emph{bioRxiv (2019) In review.}} doi:10.1101/149385 *contributed equally
+NIH Supplement to Promote Diversity in Health-Related Research \hfill {\bf November 2016--September 2017}
 
-\underline{H. Pimentel}, Z. Hu, H. Huang: ``Biclustering by by sparse
+\medskip
+
+NSF Graduate Research Fellowship Program (GRFP)
+\hfill {\bf August 2011--May 2015}
+
+\medskip
+
+NIH Maximizing Access to Research Careers (MARC) Scholar \hfill {\bf
+  June 2008--May 2010}
+
+
+  \newpage
+\section*{Publications}
+\bigskip
+Online version of publications available at \href{https://scholar.google.com/citations?user=WfzyRAUAAAAJ&hl=en}{Google Scholar}.
+
+\bigskip
+
+\hlpub{} Denotes highlighted publication/presentation.
+
+\bigskip
+
+  \underline{H. Pimentel}, Y. Li, L. Pachter, J. K. Pritchard: ``Fast intron retention QTL analysis'', {\bf \emph{In preparation. Pre-print expected late November 2019.}}
+
+\begin{etaremune}
+
+  \item\hlpub{} S. Catania, *P. A. Dumesic, \underline{*H. Pimentel}, A. Nasif, C. I. Stoddard, J. E. Burke, J. K. Diedrich, S. Cook, T. Shea, E. Geinger, R. Lintner, J. R. Yates III, P. Hajkova, G. J. Narlikar, C. A. Cuomo, J. K. Pritchard, H. D. Madhani: ``Evolutionary persistence of DNA methylation for millions of years after ancient loss of a de novo methyltransferase'', {\bf \emph{bioRxiv (2019) In review.}} doi:10.1101/149385 *contributed equally
+
+  \item \underline{H. Pimentel}, Z. Hu, H. Huang: ``Biclustering by by sparse
 canonical correlation analysis'', {\bf \emph{Quantitative Biology (2018)}}. doi:10.1007/s40484-017-0127-0
 
-L. Yi, \underline{H. Pimentel}, N. Bray, L. Pachter: ``Gene-level differential analysis at transcript-level resolution'', {\bf \emph{Genome Biology (2018)}}. doi:10.1186/s13059-018-1419-z
+  \item L. Yi, \underline{H. Pimentel}, N. Bray, L. Pachter: ``Gene-level differential analysis at transcript-level resolution'', {\bf \emph{Genome Biology (2018)}}. doi:10.1186/s13059-018-1419-z
 
-A. C. Smart, C. A. Margolis, \underline{H. Pimentel}, M. X. He, D. Miao, D. Adeegbe, T. Fugmann, K. Wong, E. M. Van Allen: ``Intron retention is a source of neoepitopes in cancer'',  {\bf \emph{Nature Biotechnology (2018)}}. doi:10.1038/nbt.4239
+  \item A. C. Smart, C. A. Margolis, \underline{H. Pimentel}, M. X. He, D. Miao, D. Adeegbe, T. Fugmann, K. Wong, E. M. Van Allen: ``Intron retention is a source of neoepitopes in cancer'',  {\bf \emph{Nature Biotechnology (2018)}}. doi:10.1038/nbt.4239
 
-\hlpub\underline{H. Pimentel}, N. Bray, S. Puente, P. Melsted, L. Pachter:  ``Differential analysis of RNA-Seq incorporating quantification uncertainty'', {\bf \emph{Nature Methods 14, 7, 687 (2017)}}. doi:10.1038/nmeth.4324
+  \item\hlpub{}\underline{H. Pimentel}, N. Bray, S. Puente, P. Melsted, L. Pachter:  ``Differential analysis of RNA-Seq incorporating quantification uncertainty'', {\bf \emph{Nature Methods 14, 7, 687 (2017)}}. doi:10.1038/nmeth.4324
 
-L. Schaeffer, \underline{H. Pimentel}, N. Bray, P. Melsted, L. Pachter: ``Pseudoalignment for metagenomic read assignment'', {\bf \emph{Bioinformatics (2017)}}. doi:10.1093/bioinformatics/btx106
+  \item L. Schaeffer, \underline{H. Pimentel}, N. Bray, P. Melsted, L. Pachter: ``Pseudoalignment for metagenomic read assignment'', {\bf \emph{Bioinformatics (2017)}}. doi:10.1093/bioinformatics/btx106
 
-L. Yi, \underline{H. Pimentel}, L. Pachter: ``Zika infection of neural progenitor cells perturbs transcription in neurodevelopmental pathways'', {\bf \emph{PLOS ONE (2017)}}, doi:10.1371/journal.pone.0175744
+  \item L. Yi, \underline{H. Pimentel}, L. Pachter: ``Zika infection of neural progenitor cells perturbs transcription in neurodevelopmental pathways'', {\bf \emph{PLOS ONE (2017)}}. doi:10.1371/journal.pone.0175744
 
-\newpage
+  \item \underline{H. Pimentel}, P. Sturmfels, N. Bray, P. Melsted, L. Pachter. ``The Lair: a resource for exploratory analysis of published RNA-Seq data'', {\bf \emph{BMC Bioinformatics (2016)}}. doi:10.1186/s12859-016-1357-2
 
-\underline{H. Pimentel}, P. Sturmfels, N. Bray, P. Melsted, L. Pachter. ``The Lair: a resource for exploratory analysis of published RNA-Seq data'', {\bf \emph{BMC Bioinformatics (2016)}}, doi:10.1186/s12859-016-1357-2
+  \item \hlpub{} N. Bray, \underline{H. Pimentel}, P. Melsted, L. Pachter: ``Near-optimal probabilistic RNA-Seq quantification'', {\bf \emph{Nature Biotechnology (2016)}}. doi:10.1038/nbt.3519
 
-\hlpub N. Bray, \underline{H. Pimentel}, P. Melsted, L. Pachter: ``Near-optimal probabilistic RNA-Seq quantification'', {\bf \emph{Nature Biotechnology (2016)}} doi:10.1038/nbt.3519
+  \item \hlpub{}\underline{H. Pimentel}, M. Parra, S. Gee, N. Mohandas, L. Pachter, J. G. Conboy: ``A dynamic intron retention program enriched in RNA processing genes regulates gene expression during terminal erythropoiesis'', {\bf \emph{Nucleic Acids Research (2015)}}. doi: 10.1093/nar/gkv1168
 
-\hlpub\underline{H. Pimentel}, M. Parra, S. Gee, N. Mohandas, L. Pachter, J. G. Conboy: ``A dynamic intron retention program enriched in RNA processing genes regulates gene expression during terminal erythropoiesis'', {\bf \emph{Nucleic Acids Research (2015)}}, doi: 10.1093/nar/gkv1168
+  \item \underline{H. Pimentel}, J. G. Conboy, L. Pachter: ``Keep Me Around: Intron
+Retention Detection and Analysis'', {\emph{aXiv preprint} (2015). http://arxiv.org/abs/1510.00696}
 
-\underline{H. Pimentel}, J. G. Conboy, L. Pachter: ``Keep Me Around: Intron
-Retention Detection and Analysis'', {\emph{aXiv preprint} (2015), http://arxiv.org/abs/1510.00696}
-
-\underline{H. Pimentel}, M. Parra, S. Gee, D. Ghanem, X. An, J. Li, N.
+  \item \underline{H. Pimentel}, M. Parra, S. Gee, D. Ghanem, X. An, J. Li, N.
 Mohandas, L. Pachter, J. G. Conboy: ``A dynamic alternative splicing program
   regulates gene expression during terminal erythropoiesis'', {\bf \emph{Nucleic
-    Acids Research (2014)}}, doi:10.1093/nar/gkt1388
+    Acids Research (2014)}}. doi:10.1093/nar/gkt1388
 
-D. Kim, G. Pertea, C. Trapnell, \underline{H. Pimentel}, R. Kelley, and S.
+  \item D. Kim, G. Pertea, C. Trapnell, \underline{H. Pimentel}, R. Kelley, and S.
 L. Salzberg, ``TopHat2: accurate alignment of transcriptomes in the presence of
 insertions, deletions and gene fusions'', {\bf \emph{Genome Biology
-    14:R36 (2013)}}
+    14:R36 (2013)}}. doi: 10.1186/gb-2013-14-4-r36
 
-C. Trapnell, A. Roberts, L. Goff, G. Pertea, D. Kim, D. R. Kelley,
+  \item C. Trapnell, A. Roberts, L. Goff, G. Pertea, D. Kim, D. R. Kelley,
 \underline{H. Pimentel}, S. L. Salzberg, J. L. Rinn, L. Pachter: ``Differential
 gene and transcript expression analysis of RNA-seq experiments with TopHat and
-Cufflinks" {\bf \emph{Nature Protocols 7, 562–578 (2012)}}
+Cufflinks'', {\bf \emph{Nature Protocols 7, 562–578 (2012)}}. doi: 10.1038/nprot.2012.016
 
-A. Roberts, \underline{H. Pimentel}, C. Trapnell, L. Pachter: ``Identification
-of novel transcripts in annotated genomes using RNA-Seq", {\bf
-  \emph{Bioinformatics (2011) 27 (17): 2325-2329.}}
+\item A. Roberts, \underline{H. Pimentel}, C. Trapnell, L. Pachter: ``Identification
+of novel transcripts in annotated genomes using RNA-Seq'', {\bf
+  \emph{Bioinformatics (2011) 27 (17): 2325-2329}}. doi: 10.1093/bioinformatics/btr355
 
-\section{\sc Presentations}
+\end{etaremune}
 
-\hlpub \underline{H. Pimentel}, Y. Li, L. Pachter, J. K. Pritchard: ``Fast intron retention QTL analysis'', {\bf \emph{Probabilistic Modeling in Genomics}}, Cold spring Harbor Laboratory, USA (November, 2018; Oral presentation)
+\section*{Presentations}
+\medskip
 
-\underline{H. Pimentel}, Y. Li, L. Pachter, J. K. Pritchard: ``Fast intron retention QTL analysis'', {\bf \emph{HHMI symposium}}, HHMI Janelia Research Campus, USA (November, 2018; Poster presentation)
+\begin{itemize}
+\item \hlpub \underline{H. Pimentel}, Y. Li, L. Pachter, J. K. Pritchard: ``Fast intron retention QTL analysis'', {\bf \emph{Probabilistic Modeling in Genomics}}, Cold spring Harbor Laboratory, USA (November, 2018; Oral presentation)
 
-\hlpub *\underline{H. Pimentel}, *N. Bray, P. Melsted, L. Pachter: ``Ultrafast RNA-seq Analysis with Kallisto and Sleuth'', {\bf \emph{Functional Genomics Seminar}}, UC Davis, USA (February, 2016; Invited by Sharon Aviran). *denotes joint presentation
+\item \underline{H. Pimentel}, Y. Li, L. Pachter, J. K. Pritchard: ``Fast intron retention QTL analysis'', {\bf \emph{HHMI symposium}}, HHMI Janelia Research Campus, USA (November, 2018; Poster presentation)
 
-\underline{H. Pimentel}, N. Bray, P. Melsted, L. Schaeffer, L. Pachter: ``Transcript level abundance estimation and differential expression with kallisto and sleuth", {\bf \emph{RNA-Seq symposium}}, Janssen Pharmaceuticals, WebEx (November, 2015)
+\item \hlpub *\underline{H. Pimentel}, *N. Bray, P. Melsted, L. Pachter: ``Ultrafast RNA-seq Analysis with Kallisto and Sleuth'', {\bf \emph{Functional Genomics Seminar}}, UC Davis, USA (February, 2016; Invited by Sharon Aviran). *denotes joint presentation
 
-\underline{H. Pimentel}, N. Bray, P. Melsted, L. Pachter: ``Transcript level differential analysis with sleuth", {\bf \emph{Genome Informatics}}, Cold Spring Harbor
+\item \underline{H. Pimentel}, N. Bray, P. Melsted, L. Schaeffer, L. Pachter: ``Transcript level abundance estimation and differential expression with kallisto and sleuth'', {\bf \emph{RNA-Seq symposium}}, Janssen Pharmaceuticals, WebEx (November, 2015)
+
+\item \underline{H. Pimentel}, N. Bray, P. Melsted, L. Pachter: ``Transcript level differential analysis with sleuth'', {\bf \emph{Genome Informatics}}, Cold Spring Harbor
 Laboratory, USA (October, 2015; Poster Presentation).
 
-\hlpub *\underline{H. Pimentel}, *N. Bray, P. Melsted, L. Pachter: ``Ultrafast RNA-seq Analysis with Kallisto and Sleuth '', {\bf \emph{Systems Biology Seminar}}, UCSF, USA (July, 2015; Invited by Raj Bhatnagar). *denotes joint presentation
+\item \hlpub *\underline{H. Pimentel}, *N. Bray, P. Melsted, L. Pachter: ``Ultrafast RNA-seq Analysis with Kallisto and Sleuth '', {\bf \emph{Systems Biology Seminar}}, UCSF, USA (July, 2015; Invited by Raj Bhatnagar). *denotes joint presentation
 
-\underline{H. Pimentel}, N. Bray, P. Melsted, L. Pachter: ``Transcript-level
+\item \underline{H. Pimentel}, N. Bray, P. Melsted, L. Pachter: ``Transcript-level
 quantification and differential expression with measurement uncertainty using
-RNA-Seq", {\bf \emph{Ramsingh Lab}}, University of Southern California, USA (June,
+RNA-Seq'', {\bf \emph{Ramsingh Lab}}, University of Southern California, USA (June,
 2015; Ramsingh Group Presentation).
 
-N. Bray, \underline{H. Pimentel}, P. Melsted, L. Pachter: ``Ultrafast accurate
-RNA-Seq analysis", {\bf \emph{Biology of Genomes}}, Cold Spring Harbor
+\item N. Bray, \underline{H. Pimentel}, P. Melsted, L. Pachter: ``Ultrafast accurate
+RNA-Seq analysis'', {\bf \emph{Biology of Genomes}}, Cold Spring Harbor
 Laboratory, USA (June, 2015; Poster Presentation).
 
-\newpage
-
-\hlpub \underline{H. Pimentel}, M. Parra, S. Gee, N. Mohandas, L. Pachter, J. G.
+\item \hlpub \underline{H. Pimentel}, M. Parra, S. Gee, N. Mohandas, L. Pachter, J. G.
 Conboy: ``An Erythroid-Specific Intron Retention Program Regulates Expression
-of Selected Genes during Terminal Erythropoiesis", {\bf \emph{American Society
+of Selected Genes during Terminal Erythropoiesis'', {\bf \emph{American Society
     of Hematology 2014}}, San Francisco, California, USA (December, 2014; Oral
 Presentation).
 
-\underline{H. Pimentel}, H. Huang: ``Biclustering as an application of sparse
-canonical correlation analysis", {\bf \emph{ISMB 2014}}, Boston, Massachusetts,
+\item \underline{H. Pimentel}, H. Huang: ``Biclustering as an application of sparse
+canonical correlation analysis'', {\bf \emph{ISMB 2014}}, Boston, Massachusetts,
 USA (July, 2014; Poster Presentation). Travel fellowship provided by FASEB
 MARC.
 
-\underline{H. Pimentel}, A. Roberts, C. Trapnell, L. Pachter: ``Visualizing
-RNA-Seq fragment alignments", {\bf \emph{ISMB 2011}}, Vienna, Austria (July,
+\item \underline{H. Pimentel}, A. Roberts, C. Trapnell, L. Pachter: ``Visualizing
+RNA-Seq fragment alignments'', {\bf \emph{ISMB 2011}}, Vienna, Austria (July,
 2011; Poster Presentation). Travel fellowship provided by FASEB MARC.
 
-\underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp:
+\item \underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp:
 ``Extending Shake\&wARP to Allow the Selection of the Refined Protein Electron
 Density Map from a Set of Sub-optimal Solutions.'' {\bf \emph{CSU Program for
     Education and Research in Biotechnology 2010}}, Los Angeles, CA. (January
 2010; Poster Presentation)
 
-\underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp:
+\item \underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp:
 ``Performance Evaluation of Shake\&wARP, a Cluster Enabled Application for
 Macromolecular Crystallography.'' {\bf \emph{International Conference of
     Computing in Engineering, Science, and Information
     2009}}, Fullerton, CA. (April 2009; Oral Presentation and published in the
          IEEE Proceedings.)
 
-\underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp:
+       \item \underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp:
 ``Hosting Multiple Simultaneous Applications over an Easy to
 Administrate, Scalable, Extensible Platform Integrating Diverse
 Computational Resources.'' {\bf \emph{Computer Science and Information
@@ -286,65 +417,63 @@ Computational Resources.'' {\bf \emph{Computer Science and Information
 CA. (April 2009; Poster Presentation and published in the
 IEEE Proceedings vol.3, no., pp.67-71)
 
-\underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp: ``A
+\item \underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp: ``A
 performance evaluation of Shake\&wARP, an application used in macromolecular
 crystallography for electron density map refinement.''  {\bf \emph{SACNAS
     National Conference 2009}}, Dallas, TX. (October 2009; Poster Presentation)
 
-\underline{H. Pimentel}, S. Mahony, D. K. Gifford: ``Determining a
+  \item \underline{H. Pimentel}, S. Mahony, D. K. Gifford: ``Determining a
 Transcription Factor's Affinity to Repetitive DNA.'' {\bf \emph{MIT
     Summer Research Program Poster Session 2009}}, MIT, Cambridge,
 MA. (August 2009; Poster Presentation)
 
-\underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp: ``A high
-throughput implementation of Shake\&wARP, a Software Application used for Phase
-Bias Removal in Macromolecular Crystallography.'' {\bf \emph{Natural Science and
-    Mathematics Career Day 2009}}, CSUF, Fullerton, CA. (April 2009; Poster
-Presentation)
+% \item \underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp: ``A high
+% throughput implementation of Shake\&wARP, a Software Application used for Phase
+% Bias Removal in Macromolecular Crystallography.'' {\bf \emph{Natural Science and
+%     Mathematics Career Day 2009}}, CSUF, Fullerton, CA. (April 2009; Poster
+% Presentation)
 
-\underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp:
+\item \underline{H. Pimentel}, S. H. Courellis, K. A. Kantardjieff, B. Rupp:
 ``A high throughput implementation of Shake\&wARP, a Software
 Application used for Phase Bias Removal in Macromolecular
 Crystallography.'' {\bf \emph{CSU Program for Education and Research
    in Biotechnology 2009}}, Los Angeles, CA. (January 2009; Poster Presentation)
+ \end{itemize}
 
-\newpage
-
-\section{\sc Selected Honors and Awards}
-
-HHMI Hanna H. Gray Fellowship \hfill {\bf September 2017 - September 2023}\\
-Transitional award (Postdoc to PI; \$1.4M over 8 years)
-
-NIH Supplement to Promote Diversity in Health-Related Research \hfill {\bf November 2016 - September 2017}
+  \bigskip
+\section*{Selected Honors and Awards}
+\medskip
 
 FASEB MARC Travel Award for ISMB 2014 \hfill {\bf August
   July 2014}
 
-National Science Foundation Graduate Research Fellowship Program (NSF GRFP)
-\hfill {\bf August 2011 - May 2015}
-
+\medskip
 FASEB MARC Travel Award for ISMB 2011 \hfill {\bf August
   July 2011}
 
+\medskip
 Graduate Assistance in Areas of National Need (GAANN) Fellow \hfill {\bf August
-  2010 - May 2011}
+  2010--May 2011}
 
-NIH Minority Access to Research Careers (MARC) Scholar \hfill {\bf
-  June 2008 - May 2010}
+\medskip
+Boeing Dean's Scholarship \hfill {\bf April 2009--2010}
 
-Boeing Dean's Scholarship \hfill {\bf April 2009 - 2010}
-
+\medskip
 ``Outstanding poster presentation in Computer Science'' at SACNAS
 Conference \hfill {\bf October 2009}
 
-Southern California Auto Scholarship \hfill {\bf August 2008 - 2009}
+\medskip
+Southern California Auto Scholarship \hfill {\bf August 2008--2009}
 
-\section{\sc Open source software}
 
+\bigskip
+\section*{Open source software}
+
+\medskip
 Academic:
 
 \begin{list2}
-  \item sleuth (2015 - present) - Transcript level differential expression with uncertainty estimation (R)\\
+  \item sleuth (2015--present) - Transcript level differential expression with uncertainty estimation (R)\\
     \url{https://github.com/pachterlab/sleuth}
   \item kallisto (2015) - Near optimal RNA-Seq quantification (C++11)\\
     \url{https://github.com/pachterlab/kallisto}
@@ -356,8 +485,7 @@ Academic:
     \url{http://ccb.jhu.edu/software/tophat}
 \end{list2}
 
-\vspace*{0.2cm}
-
+\bigskip
 Non-academic:
 
 \begin{list2}
@@ -369,93 +497,145 @@ Non-academic:
 
 \end{list2}
 
-\section{\sc Computer Skills}
+\bigskip
+\section*{Computer Skills}
 \begin{list2}
 \item Languages:
   \begin{list2}
     \item Proficient: R, C++, Python
     \item Competent: JavaScript, SQL, Bash
   \end{list2}
-\item Several other ``retired" languages which I haven't used in a while,
+\item Voice recognition for general input and software development
+\item Several other ``retired'' languages which I haven't used in a while,
   but was once fluent in: csh, Java, Perl, MATLAB, Fortran
 \item Unit testing
 \item System administration in Linux/UNIX
 \item Tools: Git, Vim, CMake, Make, Snakemake, Subversion, OpenPBS/Torque\\
 \end{list2}
-\vspace{-.65cm}
 
-\newpage
-
-\section{\sc Professional Affiliations}
+\bigskip
+\section*{Professional Affiliations}
+\medskip
 Member of Stanford Latinx Postdoc Association
-(June 2017 - Present)
+(June 2017--Present)
+
+\medskip
 
 Member of Berkeley Science Network
-(January 2013 - July 2016)
+(January 2013--July 2016)
+
+\medskip
 
 President for Association of Computing Machinery, CSUF Chapter
-(August 2009 - May 2010)
+(August 2009--May 2010)
+
+\medskip
 
 % \vspace*{1.2mm}
 President of the Omicron (CSUF) chapter for Upsilon Pi Epsilon,
-international computer science honor society (January 2008 - May 2009)
+international computer science honor society (January 2008--May 2009)
+
+\medskip
 
 % \vspace*{1.2mm}
 Vice President for Association of Computing Machinery, CSUF Chapter
-(January 2008 - May 2009)
+(January 2008--May 2009)
+
+\medskip
 
 % \vspace*{1.2mm}
 Member of Orange County Linux Users Group as well as UNIX Users
-Association of Southern California (June 2007 - May 2010)
+Association of Southern California (June 2007--May 2010)
 
 
 % \vspace{0.15cm}
 % For now, using the Dreyfus model of skill acquisition:
 % http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition
 
-
-
-\section{\sc Teaching}
-GSI for ``Introduction to Statistical Computing" (STAT 243). Main course taught
+\bigskip
+\section*{Teaching}
+\medskip
+GSI for ``Introduction to Statistical Computing'' (STAT 243). Main course taught
 by Chris Paciorek. (Fall 2015)
 
-GSI for two sections of ``Structure and Interpretation of Computer Programs"
+\medskip
+
+GSI for two sections of ``Structure and Interpretation of Computer Programs''
 (CS 61A). Main course taught by Professor John DeNero. (Spring 2015)
 
-\section{\sc Mentoring}
-Alex Tseng (Undergraduate; August 2015 - August 2016) has been working on improving effective length estimation in RNA-Seq transcript quantification.
+\bigskip
+\section*{Mentoring}
+Alex Tseng (Undergraduate; August 2015--August 2016) worked on improving effective length estimation in RNA-Seq transcript quantification in \emph{kallisto}.
 
-Pascal Sturmfels (Undergraduate; August 2015 - May 2016) has been working on improving the memory usage of sleuth so that sleuth objects can be shared easily for easier reproducibility and accessibility.
+\medskip
 
-Diego Alcantar (Undergraduate; September 2015 - May 2016) has been working on integrating pathway analysis into sleuth.
+Pascal Sturmfels (Undergraduate; August 2015--May 2016) worked on improving the memory usage of \emph{sleuth} so that sleuth objects can be shared easily for easier reproducibility and accessibility.
 
-Daniel Li (Undergraduate; August 2015 - December 2015) worked on implementing visualizations for principal component analysis loadings and bias parameters in sleuth.
+\medskip
 
-\section{\sc Workshops}
- ``Differential expression analysis with Sleuth." {\emph{Kallisto-Sleuth workshop at UC Berkeley}}. Hosted by Laboratory of Mathematics and Computational Biology (2016). Slides at \url{https://pachterlab.github.io/kallisto-sleuth-workshop-2016/}
+Diego Alcantar (Undergraduate; September 2015--May 2016) worked on integrating pathway analysis into \emph{sleuth}.
 
-``Algorithms for RNA-Seq" {\emph{iPlant workshop at UC Davis}}. Hosted by iPlant Collaborative (2015). Video at \url{https://youtu.be/96yBPM8lEt8?list=PLfFNmoa-yUIb5cYG2R1zf5rtrQQKZvKwG}
+\medskip
 
-``Algorithms for RNA-Seq" {\emph{RNA-Seq for the Next Generation}}. Hosted by Cold Spring Harbor Laboratory (2015). Slides at \url{http://www.rnaseqforthenextgeneration.org/}
+Daniel Li (Undergraduate; August 2015--December 2015) worked on implementing visualizations for principal component analysis loadings and bias parameters in \emph{sleuth}.
 
-``eXpress transcript quantification" {\emph{*Seq I Workshop}}. Hosted by Laboratory of Mathematics and Computational biology (2012). \url{http://lmcb.wikispaces.com/eXpress+Walkthrough}
+\medskip
 
-``Sequence alignment" {\emph{RNA-Seq workshop}}. Hosted by Computational Genomics Resource Laboratory (2011).  \url{http://cgrlucb.wikispaces.com/Sequence+alignment}
+Grace Christenberry (SUPERB visiting undergraduate; May 2011--August 2011) worked on implementing a visualization tool for Cufflinks bias estimation parameters.
 
-\newpage
+\bigskip
+\section*{Workshops}
+\medskip
+ ``Differential expression analysis with Sleuth.'' {\emph{Kallisto-Sleuth workshop at UC Berkeley}}. Hosted by Laboratory of Mathematics and Computational Biology (2016). Slides at \url{https://pachterlab.github.io/kallisto-sleuth-workshop-2016/}
 
-\section{\sc Outreach}
+\medskip
+
+``Algorithms for RNA-Seq'' {\emph{iPlant workshop at UC Davis}}. Hosted by iPlant Collaborative (2015). Video at \url{https://youtu.be/96yBPM8lEt8?list=PLfFNmoa-yUIb5cYG2R1zf5rtrQQKZvKwG}
+
+\medskip
+
+``Algorithms for RNA-Seq'' {\emph{RNA-Seq for the Next Generation}}. Hosted by Cold Spring Harbor Laboratory (2015). Slides at \url{http://www.rnaseqforthenextgeneration.org/}
+
+\medskip
+
+``eXpress transcript quantification'' {\emph{*Seq I Workshop}}. Hosted by Laboratory of Mathematics and Computational biology (2012). \url{http://lmcb.wikispaces.com/eXpress+Walkthrough}
+
+\medskip
+
+``Sequence alignment'' {\emph{RNA-Seq workshop}}. Hosted by Computational Genomics Resource Laboratory (2011).  \url{http://cgrlucb.wikispaces.com/Sequence+alignment}
+
+\bigskip
+\section*{Outreach}
+\medskip
+Speaker at Stanford's Grant Writing Academy Postdoctoral Fellowship workshop (Fall 2017, 2018, 2019)
+
+\medskip
+Invited speaker to Caminos a las Ciencias (CALC) at St.\ Mary's College (Fall 2018)
+
+\medskip
+
+Mentor through First-generation or Low-Income (FLI) Community Mentoring Program at Stanford (Fall 2016)
+
+\medskip
+
+Mentor to two students at Bay Area Graduate Pathways Symposium at UC Berkeley (Fall 2015)
+
+\medskip
 Presentations to biology and statistics classrooms at La Mirada High School on
 computational biology (Spring 2014)
+
+\medskip
 
 Mentor to summer research intern through SUPERB program at UC Berkeley (Summer
 2011)
 
-Mathematics, Engineering, Science Achievement (MESA) Robotics Workshop
-(April, May 2009)
-\vspace{-.25cm}
+\medskip
 
-\section{\sc Hobbies}
-Sketching, fountain pens and caligrpahy, road and mountain cycling, bicycle mechanics.
-\end{resume}
+Mathematics, Engineering, Science Achievement (MESA) Robotics Workshop (April, May 2009)
+
+\bigskip
+\section*{Hobbies}
+\medskip
+Sketching, fountain pens and calligraphy, road and mountain cycling, bicycle mechanics.
+% \end{resume}
 \end{document}
